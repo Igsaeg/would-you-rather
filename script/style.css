@@ -1,0 +1,85 @@
+@font-face {
+    font-family: Metropolis-Bold;
+    src: url(../assets/Metropolis-Bold.otf);
+}
+@font-face {
+    font-family: Metropolis-Medium;
+    src: url(../assets/Metropolis-Medium.otf);
+}
+@font-face {
+    font-family: Metropolis-Regular;
+    src: url(../assets/Metropolis-Regular.otf);
+}
+body {
+    background: linear-gradient(
+        to right,
+        #8d8c80 0%,
+        #8d8c80 0.1%,
+        #C8C6AF 30%,
+        #C8C6AF 70%,
+        #8d8c80 99.9%,
+        #8d8c80 100%
+    );
+    margin: 0em 20em;
+    color: #333;
+}
+h1 {
+    font-family: 'Metropolis-Bold';
+    margin: 1em 0em 3.5em 0em;
+    text-align: center;
+    font-size: 60px;
+}
+div {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+div#main {
+    gap: 15em;
+}
+div.item:last-child {
+    margin-bottom: 20em;
+}
+div.item p:first-child {
+    font-family: 'Metropolis-Medium';
+}
+div.choices {
+    flex-direction: row;
+    gap: 60px;
+}
+p {
+    font-family: 'Metropolis-Regular';
+    text-align: center;
+    text-wrap: wrap;
+    font-size: 25px;
+}
+button {
+    font-family: 'Metropolis-Regular';
+    background-color: #ECE4B7;
+    outline: #fff hidden;
+    border-radius: 10px;
+    transition: 0.4s;
+    padding: 0px 1em;
+    font-size: 20px;
+    color: #333;
+    height: 3.5em;
+    border: none;
+    width: 17em;
+}
+button:hover {
+    font-family: 'Metropolis-Bold';
+    background-color: #D9DD92;
+}
+#picked {
+    font-family: 'Metropolis-Bold';
+    background-color: #519872;
+    pointer-events: none;
+}
+#unpicked {
+    background-color: #B4656F;
+    pointer-events: none;
+}
+#disabled {
+    background-color: #B2AB81;
+    pointer-events: none;
+}
