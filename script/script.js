@@ -7,13 +7,13 @@ function a() {
     update();
     let a = buttonParent[i].querySelector('button:nth-child(1)')
     a.id = `picked`;
-    let b = buttonParent[i].querySelector('button:nth-child(3)')
+    let b = buttonParent[i].querySelector('button:nth-child(2)')
     b.id = `unpicked`;
 }
 function b() {
     choice = 1;
     update();
-    let a = buttonParent[i].querySelector('button:nth-child(3)')
+    let a = buttonParent[i].querySelector('button:nth-child(2)')
     a.id = `picked`;
     let b = buttonParent[i].querySelector('button:nth-child(1)')
     b.id = `unpicked`;
@@ -24,12 +24,12 @@ function update() {
     firstParagraph.innerText = `You have chosen ${choices[i][choice]}`;
     let a = buttonParent[i+1].querySelector('button:nth-child(1)');
     a.removeAttribute('id');
-    let b = buttonParent[i+1].querySelector('button:nth-child(3)');
+    let b = buttonParent[i+1].querySelector('button:nth-child(2)');
     b.removeAttribute('id');
 }
 for (let x = 1; x < buttonParent.length; x++) {
     let a = buttonParent[x].querySelector('button:nth-child(1)');
     a.id = `disabled`;
-    let b = buttonParent[x].querySelector('button:nth-child(3)');
+    let b = buttonParent[x].querySelector('button:nth-child(2)');
     b.id = `disabled`;
 }
