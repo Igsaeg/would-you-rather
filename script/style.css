@@ -77,10 +77,6 @@ button:hover {
     background-color: #B4656F;
     pointer-events: none;
 }
-#disabled {
-    background-color: #B2AB81;
-    pointer-events: none;
-}
 @media screen and (max-width: 750px) {
     body { margin: 0% 18%; }
     .choices { flex-direction: column; }
